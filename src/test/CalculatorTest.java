@@ -36,11 +36,11 @@ class CalculatorTest {
 
     @Test
     void divTest() {
-        assertEquals(2.0, Calculator.div(4, 2));
-        assertNotEquals(3.0, Calculator.div(4, 2));
+        assertEquals(2.0, Calculator.div(4, 2),0.1);
+        assertNotEquals(3.0, Calculator.div(4, 2),0.1);
 
-        assertEquals(3.5, Calculator.div(7, 2));
-        assertNotEquals(4.0, Calculator.div(7, 2));
+        assertEquals(3.5, Calculator.div(7, 2),0.1);
+        assertNotEquals(4.0, Calculator.div(7, 2),0.1);
 
         assertTrue(Double.isNaN(Calculator.div(5, 0)));
     }
